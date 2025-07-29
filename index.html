@@ -1,170 +1,91 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weathers</title>
-</head>
-<body>
-    <div class="card">
-
-            
-    </div>
-</body>
-</html> -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Weather Cards</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right top, #dfe9f3, #ffffff);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 50px 20px;
-      gap: 30px;
-    }
-
-    .weather-card {
-      width: 320px;
-      height: 130px;
-      border-radius: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 20px;
-      color: #fff;
-      position: relative;
-      overflow: hidden;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      backdrop-filter: blur(6px);
-      background: rgba(255, 255, 255, 0.1);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-      animation: fadeInUp 0.6s ease forwards;
-      opacity: 0;
-    }
-
-    .weather-card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
-    }
-
-    @keyframes fadeInUp {
-      0% {
-        transform: translateY(30px);
-        opacity: 0;
-      }
-      100% {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
-
-    .weather-icon {
-      width: 80px;
-      height: 80px;
-      animation: float 3s ease-in-out infinite;
-    }
-
-    @keyframes float {
-      0%, 100% {
-        transform: translateY(0px);
-      }
-      50% {
-        transform: translateY(-8px);
-      }
-    }
-
-    .weather-info {
-      text-align: right;
-    }
-
-    .temperature {
-      font-size: 36px;
-      font-weight: bold;
-    }
-
-    .condition {
-      font-size: 18px;
-    }
-
-    .location {
-      font-size: 13px;
-      opacity: 0.85;
-    }
-
-    /* Background colors for different cards */
-    .cloudy {
-      background: linear-gradient(135deg, #3f9ef7, #2e60f3);
-    }
-
-    .overcast {
-      background: linear-gradient(135deg, #cbd5e0, #a0aec0);
-      color: #333;
-    }
-
-    .rainy {
-      background: linear-gradient(135deg, #4675da, #234e9d);
-    }
-
-    /* Icon styles */
-    .icon-sun-cloud {
-      background: url('https://cdn-icons-png.flaticon.com/512/1163/1163661.png') no-repeat center;
-      background-size: contain;
-    }
-
-    .icon-cloud {
-      background: url('https://cdn-icons-png.flaticon.com/512/414/414825.png') no-repeat center;
-      background-size: contain;
-    }
-
-    .icon-rain {
-      background: url('https://cdn-icons-png.flaticon.com/512/1163/1163624.png') no-repeat center;
-      background-size: contain;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Weather Card</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
+    <!-- Card 1 -->
+    <!-- <div class="bg-img1">
+        <div class="card1">
+            <img src="https://cdn-icons-png.flaticon.com/512/4151/4151022.png" alt="Snowflake">
+            <h2>Winter Weather</h2>
+            <div class="temp1">-3°C</div>
+            <div class="desc">❄️ Snowfall & Freezing Breeze</div>
+            <div class="details">
+                <p>Humidity: 92%</p>
+                <p>Wind: 12 km/h</p>
+                <p>Location: Swat, Pakistan</p>
+            </div>
+        </div>
+    </div> -->
 
-  <!-- Cloudy -->
-  <div class="weather-card cloudy" style="animation-delay: 0s;">
-    <div class="weather-icon icon-sun-cloud"></div>
-    <div class="weather-info">
-      <div class="temperature">38°</div>
-      <div class="condition">Cloudy</div>
-      <div class="location">Shanghai • Current - 2:00PM</div>
-    </div>
-  </div>
+    <!-- Card 2 -->
+    <!-- <div class="bg-img2">
+        <div class="card2">
+            <img src="https://cdn-icons-png.flaticon.com/512/869/869869.png" alt="Sun">
+            <h2>Summer Weather</h2>
+            <div class="temp2">38°C</div>
+            <div class="desc">🌞 Hot & Sunny with Warm Breeze</div>
+            <div class="details">
+                <p>Humidity: 45%</p>
+                <p>Wind: 10 km/h</p>
+                <p>Location: Karachi, Pakistan</p>
+            </div>
+        </div>
+    </div> -->
 
-  <!-- Overcast -->
-  <div class="weather-card overcast" style="animation-delay: 0.2s;">
-    <div class="weather-icon icon-cloud"></div>
-    <div class="weather-info">
-      <div class="temperature">31°</div>
-      <div class="condition">Overcast</div>
-      <div class="location">Shanghai • Current - 3:00PM</div>
-    </div>
-  </div>
+    <!-- Card 3 -->
+    <!-- <div class="bg-img3">
+        <div class="card3">
+            <img src="https://cdn-icons-png.flaticon.com/512/3504/3504615.png" alt="Autumn Leaf">
+            <h2>Autumn Weather</h2>
+            <div class="temp3">17°C</div>
+            <div class="desc">🍂 Cool & Windy with Falling Leaves</div>
+            <div class="details">
+                <p>Humidity: 60%</p>
+                <p>Wind: 15 km/h</p>
+                <p>Location: Murree, Pakistan</p>
+            </div>
+        </div>
+    </div> -->
 
-  <!-- Heavy Rain -->
-  <div class="weather-card rainy" style="animation-delay: 0.4s;">
-    <div class="weather-icon icon-rain"></div>
-    <div class="weather-info">
-      <div class="temperature">26°</div>
-      <div class="condition">Heavy Rain</div>
-      <div class="location">Shanghai • Current - 6:00PM</div>
-    </div>
-  </div>
+    <!-- Card 4 -->
+    <!-- <div class="bg-img4">
+        <div class="card4">
+            <img src="https://cdn-icons-png.flaticon.com/512/9997/9997682.png" alt="Spring Flower">
+            <h2>Spring Weather</h2>
+            <div class="temp4">24°C</div>
+            <div class="desc">🌼 Mild & Bloomy with Fresh Air</div>
+            <div class="details">
+                <p>Humidity: 55%</p>
+                <p>Wind: 8 km/h</p>
+                <p>Location: Islamabad, Pakistan</p>
+            </div>
+        </div>
+    </div> -->
 
+    <!-- Card 5 -->
+    <!-- <div class="bg-img5">
+        <div class="card5">
+            <img src="https://cdn-icons-png.flaticon.com/512/1779/1779940.png" alt="Rain Icon">
+            <h2>Rainy Weather</h2>
+            <div class="temp5">25°C</div>
+            <div class="desc">🌧️ Light Showers with Cool Breeze</div>
+            <div class="details">
+                <p>Humidity: 88%</p>
+                <p>Wind: 12 km/h</p>
+                <p>Location: Lahore, Pakistan</p>
+            </div>
+        </div>
+    </div> -->
+
+
+    <script src="./index.js"></script>
 </body>
+
 </html>
